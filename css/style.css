@@ -29,8 +29,15 @@ body {
   border: 1px solid black;
 }
 
+.btn {
+  border: 1px solid white;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
 
 /* UTILITIES */
+
 
 /***************************************** 
           MAIN SECTION
@@ -43,6 +50,28 @@ main {
   position: relative;
 }
 
+.main-container {
+  width: 90%;
+  overflow-y: auto;
+}
+
+.overlay {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.overlay a {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-decoration: none;
+}
+
+
+
 /***************************************** 
         START ASIDE STYLE
 ******************************************/
@@ -50,14 +79,12 @@ aside {
   width: 10%;
   min-width: 175px ;
   height: calc(100vh - 10vh);
-  overflow-y: auto;
-  align-self: flex-end;
+  display: inline-block;
   background-color: var(--aside-background);
   color: white;
 }
 
 aside .row {
-  height: calc(100vh - 10vh);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,7 +96,7 @@ aside .row .col:first-child {
 }
 
 aside .row .col:nth-child(2) {
-  min-height: calc(90vh - (200px + 100px));
+  min-height: calc( 90vh - (200px + 100px));
   overflow-y: auto;
 }
 
@@ -78,38 +105,8 @@ aside .row .col:last-child {
 }
 
 /***************************************** 
-        END ASIDE STYLE
-******************************************/
-
-/***************************************** 
         OVERLAY STYLE
 ******************************************/
-
-.upgrade-overlay {
-  width: calc(100% - 10%);
-  max-width: calc(100% - 175px);
-  height: 100px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-.upgrade-overlay span a {
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px 25px;
-  position: absolute;
-  right: 50px;
-  top: 50%;
-  transform:translateY(-50%) ;
-  color: white;
-  border: 1px solid white;
-  border-radius: 20px;
-}
-
 
 
 /***************************************** 
