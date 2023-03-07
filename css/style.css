@@ -77,7 +77,11 @@ aside .row .col:last-child {
         END ASIDE STYLE
 ******************************************/
 
-.upgrade-layover {
+/***************************************** 
+        OVERLAY STYLE
+******************************************/
+
+.upgrade-overlay {
   width: calc(100% - 10%);
   max-width: calc(100% - 175px);
   height: 100px;

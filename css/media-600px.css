@@ -5,7 +5,7 @@
     min-width: 75px ;
   }
 
-  .upgrade-layover {
+  .upgrade-overlay {
     width: calc(100% - 75px);
     max-width: calc(100% - 75px );
     height: 100px;
