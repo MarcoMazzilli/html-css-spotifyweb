@@ -1,9 +1,63 @@
+:root {
+  --main-background : rgb(20, 25, 34);
+  --mediaplayer-background: rgb(40, 40, 40) ;
+  --spotify-green: rgb(179, 255, 36);
+  --txt-grey:rgb(125, 127, 132);
+
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  background-color: royalblue;
+/* GENERIC RULES */
+
+/* UTILITIES */
+
+.d-flex {
+  display: flex;
 }
+
+
+
+
+
+
+/* UTILITIES */
+
+/***************************************** 
+          MAIN SECTION
+******************************************/
+
+main {
+  height: calc(100vh - 10vh);
+  background-color: var(--main-background);
+  overflow-y: scroll;
+}
+
+
+
+/***************************************** 
+          MEDIA PLAYER PANEL CONTROL
+******************************************/
+
+.media-player-panel-control {
+  height: 10vh;
+  background-color: var(--mediaplayer-background);
+}
+
+.media-player-panel-control .row .col {
+  height: 10vh;
+}
+
+.media-player-panel-control .row .col:nth-of-type(2) {
+  width: 70%;
+  background-color: brown; /* Debug*/
+}
+
+.media-player-panel-control .row .col:nth-child(odd) {
+  width: 15%;
+  background-color: burlywood; /* Debug*/
+} 
