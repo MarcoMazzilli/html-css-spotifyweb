@@ -3,6 +3,7 @@
   --mediaplayer-background: rgb(40, 40, 40) ;
   --spotify-green: rgb(179, 255, 36);
   --txt-grey:rgb(125, 127, 132);
+  --aside-background: rgb(0, 0, 0 );
 
 }
 
@@ -34,7 +35,26 @@
 main {
   height: calc(100vh - 10vh);
   background-color: var(--main-background);
-  overflow-y: scroll;
+  overflow-y: auto;
+  position: relative;
+}
+
+aside {
+  width: 10%;
+  max-width: 15%;
+  height: calc(100vh - 10vh);
+  overflow-y: auto;
+  align-self: flex-end;
+  background-color: var(--aside-background);
+}
+
+.upgrade-layover {
+  width: calc(100% - 10%);
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(255, 217, 0, 0.4);
 }
 
 
@@ -53,11 +73,11 @@ main {
 }
 
 .media-player-panel-control .row .col:nth-of-type(2) {
-  width: 70%;
+  width: 80%;
   background-color: brown; /* Debug*/
 }
 
 .media-player-panel-control .row .col:nth-child(odd) {
-  width: 15%;
+  width: 10%;
   background-color: burlywood; /* Debug*/
 } 
