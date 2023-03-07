@@ -4,7 +4,6 @@
   --spotify-green: rgb(179, 255, 36);
   --txt-grey:rgb(125, 127, 132);
   --aside-background: rgb(0, 0, 0 );
-
 }
 
 * {
@@ -22,10 +21,6 @@
 }
 
 
-
-
-
-
 /* UTILITIES */
 
 /***************************************** 
@@ -41,7 +36,7 @@ main {
 
 aside {
   width: 10%;
-  max-width: 15%;
+  min-width: 175px ;
   height: calc(100vh - 10vh);
   overflow-y: auto;
   align-self: flex-end;
@@ -50,13 +45,13 @@ aside {
 
 .upgrade-layover {
   width: calc(100% - 10%);
+  max-width: calc(100% - 175px);
   height: 100px;
   position: absolute;
   right: 0;
   top: 0;
   background-color: rgba(255, 217, 0, 0.4);
 }
-
 
 
 /***************************************** 
@@ -70,6 +65,7 @@ aside {
 
 .media-player-panel-control .row .col {
   height: 10vh;
+  min-width: 150px;
 }
 
 .media-player-panel-control .row .col:nth-of-type(2) {
