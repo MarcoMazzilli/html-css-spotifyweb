@@ -15,6 +15,11 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
 
 /* GENERIC RULES */
 
@@ -66,8 +71,18 @@ main {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  color: white;
-  text-decoration: none;
+}
+
+.navbar ul {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 5px  20px;
 }
 
 
@@ -103,10 +118,6 @@ aside .row .col:nth-child(2) {
 aside .row .col:last-child {
   height: 100px;
 }
-
-/***************************************** 
-        OVERLAY STYLE
-******************************************/
 
 
 /***************************************** 
