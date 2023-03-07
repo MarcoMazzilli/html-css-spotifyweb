@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+  
+  aside {
+    width: 75px ;
+    min-width: 75px ;
+  }
+
+  .upgrade-layover {
+    width: calc(100% - 75px);
+    max-width: calc(100% - 75px );
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  
+}
