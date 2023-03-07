@@ -92,8 +92,11 @@ main {
 
 .overlay {
   height: 100px;
+  width: 90%;
   background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .overlay a {
@@ -101,6 +104,10 @@ main {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.navbar {
+  margin-top: 100px;
 }
 
 .navbar ul {
