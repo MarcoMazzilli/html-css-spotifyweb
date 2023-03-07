@@ -34,6 +34,9 @@ main {
   position: relative;
 }
 
+/***************************************** 
+        START ASIDE STYLE
+******************************************/
 aside {
   width: 10%;
   min-width: 175px ;
@@ -43,6 +46,10 @@ aside {
   background-color: var(--aside-background);
 }
 
+/***************************************** 
+        END ASIDE STYLE
+******************************************/
+
 .upgrade-layover {
   width: calc(100% - 10%);
   max-width: calc(100% - 175px);
@@ -50,7 +57,7 @@ aside {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: rgba(255, 217, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
