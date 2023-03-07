@@ -20,6 +20,11 @@
   display: flex;
 }
 
+.debug-1 {
+  background-color: rgba(208, 0, 255, 0.2);
+  border: 1px solid black;
+}
+
 
 /* UTILITIES */
 
@@ -44,6 +49,28 @@ aside {
   overflow-y: auto;
   align-self: flex-end;
   background-color: var(--aside-background);
+  color: white;
+}
+
+aside .row {
+  height: calc(100vh - 10vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside .row .col:first-child {
+  height: 200px;
+  min-height: 200px;
+}
+
+aside .row .col:nth-child(2) {
+  min-height: calc(90vh - (200px + 100px));
+  overflow-y: auto;
+}
+
+aside .row .col:last-child {
+  height: 100px;
 }
 
 /***************************************** 
