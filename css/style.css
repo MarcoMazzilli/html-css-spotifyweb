@@ -19,7 +19,10 @@ body {
 a {
   text-decoration: none;
   color: white;
-  text-transform: uppercase;
+}
+
+ul li {
+  list-style: none;
 }
 
 h1 {
@@ -82,7 +85,7 @@ main {
 
 .overlay {
   height: 100px;
-  width: calc(100% - 200px);
+  width: calc(100% - 230px);
   position: fixed;
   top: 0;
   right: 0;
@@ -146,7 +149,7 @@ margin: 30px 0;
         START ASIDE STYLE
 ******************************************/
 aside {
-  width: 200px;
+  width: 230px;
   flex-shrink: 0;
   height: 100%;
   background-color: var(--aside-background);
@@ -159,19 +162,59 @@ aside .row {
   justify-content: space-between;
 }
 
+aside .row .col {
+  padding: 10px 0;
+}
+
+/* GENERIC RULES */
+
+/* FIRST COL */
+
 aside .row .col:first-child {
   height: 200px;
   min-height: 200px;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+aside .row .col:first-child img {
+  width: 80%;
+}
+
+aside .row .col:first-child li a{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+aside .row .col:first-child li img {
+  width: 30px;
+}
+
+aside .row .col:first-child li:first-child a {
+  border-left:5px solid var(--spotify-green);
+}
+
+aside .row .col:first-child li:first-child span {
+  color: white;
+}
+
+/* SECOND COL */
 
 aside .row .col:nth-child(2) {
   min-height: calc( 90vh - (200px + 100px));
   overflow-y: auto;
 }
 
+/* TIRDTH COL */
+
 aside .row .col:last-child {
   height: 100px;
 }
+
+
 
 
 /***************************************** 
@@ -194,7 +237,7 @@ aside .row .col:last-child {
 }
 
 .media-player-panel-control .row .col:nth-child(odd) {
-  width: 200px;
+  width: 230px;
   flex-shrink: 0;
   background-color: burlywood; /* Debug*/
 } 
