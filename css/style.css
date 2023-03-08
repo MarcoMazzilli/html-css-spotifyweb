@@ -151,19 +151,21 @@ margin: 30px 0;
 aside {
   width: 230px;
   flex-shrink: 0;
-  height: 100%;
+  min-height: 100%;
   background-color: var(--aside-background);
   color: white;
 }
 
 aside .row {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 aside .row .col {
-  padding: 10px 0;
+  padding: 10px;
 }
 
 /* GENERIC RULES */
@@ -204,8 +206,32 @@ aside .row .col:first-child li:first-child span {
 /* SECOND COL */
 
 aside .row .col:nth-child(2) {
-  min-height: calc( 90vh - (200px + 100px));
+  height: calc( 90vh - (200px + 100px));
+  flex-direction: column;
+}
+
+.add-playlist {
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+.add-playlist i {
+background-color: var(--txt-grey);
+color: black;
+padding: 10px;
+font-size: 1.5rem;
+}
+
+.name-playlist {
   overflow-y: auto;
+}
+
+.name-playlist li {
+  margin-bottom: 20px;
+}
+
+.name-playlist li a {
+  color: var(--txt-grey);
 }
 
 /* TIRDTH COL */
