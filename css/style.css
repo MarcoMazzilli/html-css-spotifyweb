@@ -49,13 +49,13 @@ span {
 .debug-1 {
   background-color: rgba(208, 0, 255, 0.2);
   border: 1px solid black;
-  min-width: 100px;
+  min-height: 20px;
 }
 
 .debug-2 {
   background-color: rgba(17, 255, 0, 0.652);
   border: 1px solid black;
-  min-width: 100px;
+  min-height: 20px;
 }
 
 .btn {
@@ -286,9 +286,10 @@ aside .row .col:last-child {
   background-color: var(--mediaplayer-background);
 }
 
-.media-player-panel-control .row .col {
+.media-player-panel-control .row {
   height: 10vh;
-  min-width: 150px;
+  max-height: 10vh;
+  align-items: center;
 }
 
 .media-player-panel-control .row .col:nth-of-type(2) {
@@ -297,7 +298,65 @@ aside .row .col:last-child {
 }
 
 .media-player-panel-control .row .col:nth-child(odd) {
-  width: 230px;
+  width: 250px;
+  height: 6vh;
   flex-shrink: 0;
-  background-color: burlywood; /* Debug*/
+  align-items: center;
+  padding: 10px;
 } 
+
+.media-player-panel-control .info-song h4 {
+  color: rgb(255, 255, 255);
+}
+
+.media-player-panel-control .info-song span {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+
+.media-player-panel-control .album-cover img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.media-player-panel-control .info-song {
+  margin-right: 20px;
+}
+
+.media-player-panel-control .add-icons {
+  color: var(--txt-grey);
+  font-size: 1.3rem;
+}
+
+.media-player-panel-control .col:last-child{
+  justify-content: space-around;
+}
+
+.media-player-panel-control .col:last-child .icons i {
+  color: white;
+  padding: 2px;
+}
+
+.volume {
+  width: 60%;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+.bar-progression {
+  width: 30%;
+  border-radius: 20px;
+  border: 3px solid white
+}
+
+.bar-progression:hover {
+  width: 30%;
+  border-radius: 20px;
+  border: 3px solid var(--spotify-green);
+}
+
