@@ -1,9 +1,11 @@
 @media screen and (max-width: 600px) {
   
   aside {
-    width: 5%;
-    min-width: 20px ;
+    width: 100px;
   }
+
+  .overlay {
+    width: calc(100% - 100px);
 
 
 
