@@ -293,7 +293,6 @@ aside .row .col:last-child {
 }
 
 .media-player-panel-control .row .col:nth-of-type(2) {
-  background-color: brown; /* Debug*/
   flex-grow: 2;
 }
 
@@ -358,5 +357,39 @@ aside .row .col:last-child {
   width: 30%;
   border-radius: 20px;
   border: 3px solid var(--spotify-green);
+}
+
+.container-control {
+  width: 60%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-control {
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.track-control span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.track-control span:nth-child(3) {
+  font-size: 2.6rem;
+}
+
+.progression-info {
+  height: 4vh;
+  justify-content: center;
+  align-items: first baseline;
+  gap: 20px;
+}
+
+.track-progression {
+  width: 60%;
 }
 
