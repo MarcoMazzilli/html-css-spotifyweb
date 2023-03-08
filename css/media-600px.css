@@ -1,13 +1,58 @@
 @media screen and (max-width: 600px) {
   
   aside {
-    width: 100px;
+    width: 50px;
+  }
+
+  aside .row .col:first-child .logo-desktop {
+    display: none;
+  }
+  
+  aside .row .col:first-child .logo-mobile {
+    display: block; 
+    margin: 0; 
+  }
+
+  aside ul:first-of-type span:last-child {
+    display: none;
+  }
+  
+  aside .col:nth-child(2){
+    display: none;
+  }
+  
+  aside .col:nth-child(3){
+    display: none;
+  }
+  
+  aside .row .col:first-child {
+    display: block;
+  }
+  
+  aside .row .col:first-child li a{
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  aside .row .col:first-child a:hover {
+    border-left: none;
+    border-bottom:3px solid var(--spotify-green);
   }
 
   .overlay {
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
+}
 
+  .container-music .description h3 {
+    font-size: 1rem;
+  }
 
+  .media-player-panel-control .info-song {
+    margin-right: 0px;
+  }
+  .navbar ul li {
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
 
-  
 }

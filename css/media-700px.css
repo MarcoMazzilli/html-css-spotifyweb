@@ -3,4 +3,13 @@
   .card {
     width: calc(100% / 2);
   }
+
+  .track-control span:first-child {
+    display: none;
+  }
+  
+  .track-control span:last-child {
+    display: none;
+  }
+
 }
