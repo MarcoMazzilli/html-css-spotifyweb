@@ -187,7 +187,7 @@ aside .row .col:first-child {
 }
 
 aside .row .col:first-child img {
-  width: 80%;
+  width: 70%;
 }
 
 aside .row .col:first-child li a{
@@ -258,6 +258,17 @@ aside .row .col:last-child {
 .download-cta span {
   font-size: .9rem;
   font-weight: bold;
+}
+
+.author {
+  align-items: center;
+  gap: 15px;
+}
+
+.author img {
+  width: 35px;
+  background-color: var(--txt-grey);
+  border-radius: 50%;
 }
 
 
