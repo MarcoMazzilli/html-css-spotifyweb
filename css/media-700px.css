@@ -2,6 +2,7 @@
 
   .card {
     width: calc(100% / 2);
+    padding: 0 5px ;
   }
 
   .track-control span:first-child {

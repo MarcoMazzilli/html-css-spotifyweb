@@ -150,6 +150,10 @@ margin: 30px 0;
   width: calc(100% / 6);
   padding: 0 20px ;
 }
+.card :hover {
+  cursor: pointer;
+}
+
 
 .circle {
   border-radius: 50%;
@@ -295,9 +299,6 @@ aside .row .col:last-child {
   font-size: 1rem;
 }
 
-
-
-
 /***************************************** 
           MEDIA PLAYER PANEL CONTROL
 ******************************************/
@@ -324,6 +325,17 @@ aside .row .col:last-child {
   padding: 10px;
 } 
 
+      /* GENERIC RULES */
+
+.media-player-panel-control .info-song {
+  margin-right: 20px;
+}
+
+.media-player-panel-control .album-cover img {
+  width: 50px;
+  margin-right: 10px;
+}
+
 .media-player-panel-control .info-song h4 {
   color: rgb(255, 255, 255);
 }
@@ -333,51 +345,12 @@ aside .row .col:last-child {
   font-size: .8rem;
 }
 
-
-.media-player-panel-control .album-cover img {
-  width: 50px;
-  margin-right: 10px;
-}
-
-.media-player-panel-control .info-song {
-  margin-right: 20px;
-}
-
 .media-player-panel-control .add-icons {
   color: var(--txt-grey);
   font-size: 1.3rem;
 }
 
-.media-player-panel-control .col:last-child{
-  justify-content: space-around;
-}
-
-.media-player-panel-control .col:last-child .icons i {
-  color: white;
-  padding: 2px;
-}
-
-.volume {
-  width: 60%;
-}
-
-.bar {
-  width: 100%;
-  border-radius: 20px;
-  background-color: grey;
-}
-
-.bar-progression {
-  width: 30%;
-  border-radius: 20px;
-  border: 3px solid white
-}
-
-.bar-progression:hover {
-  width: 30%;
-  border-radius: 20px;
-  border: 3px solid var(--spotify-green);
-}
+      /* LEFT COL */
 
 .container-control {
   width: 60%;
@@ -414,3 +387,36 @@ aside .row .col:last-child {
   flex-shrink: 0;
 }
 
+    /* SECOND COL */
+
+.media-player-panel-control .col:last-child{
+  justify-content: space-around;
+}
+
+.volume {
+width: 60%;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+.bar-progression {
+  width: 30%;
+  border-radius: 20px;
+  border: 3px solid white
+}
+
+.bar-progression:hover {
+  width: 30%;
+  border-radius: 20px;
+  border: 3px solid var(--spotify-green);
+}
+
+.media-player-panel-control .col:last-child .icons i {
+  color: white;
+  padding: 2px;
+}
+      /* TIRDTH COL */
