@@ -65,6 +65,13 @@ span {
   border-radius: 25px;
 }
 
+.line {
+  border: 1px solid var(--txt-grey);
+  width: 90%;
+  margin: 0 auto;
+  margin: 10px 0;
+}
+
 /* UTILITIES */
 
 
@@ -238,6 +245,19 @@ font-size: 1.5rem;
 
 aside .row .col:last-child {
   height: 100px;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.download-cta img {
+  width: 20px;
+  margin-right: 10px;
+  filter: invert(51%) sepia(3%) saturate(485%) hue-rotate(185deg) brightness(96%) contrast(86%)
+}
+
+.download-cta span {
+  font-size: .9rem;
+  font-weight: bold;
 }
 
 
