@@ -28,6 +28,11 @@ ul li {
 h1 {
   color: white;
   margin-bottom: 15px;
+} 
+
+h3 {
+  padding: 10px 0;
+  color: white;
 }
 
 span {
@@ -120,6 +125,10 @@ main {
 .navbar ul li {
   display: inline-block;
   padding: 5px  20px;
+}
+
+.navbar a {
+  text-transform: uppercase;
 }
 
 .container-music {
