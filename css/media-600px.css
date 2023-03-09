@@ -4,14 +4,24 @@
     width: 50px;
   }
 
+  .aside .row .col:first-child {
+    padding-right: 0px;
+  }
+
+  aside .row .col:first-child {
+    justify-content: flex-start;
+  }
+
   aside .row .col:first-child .logo-desktop {
     display: none;
   }
   
   aside .row .col:first-child .logo-mobile {
     display: block; 
-    margin: 0; 
+    margin: 10px auto;
   }
+
+
 
   aside ul:first-of-type span:last-child {
     display: none;
@@ -25,20 +35,6 @@
     display: none;
   }
   
-  aside .row .col:first-child {
-    display: block;
-  }
-  
-  aside .row .col:first-child li a{
-    padding: 0;
-    margin-top: 20px;
-  }
-  
-  aside .row .col:first-child a:hover {
-    border-left: none;
-    border-bottom:3px solid var(--spotify-green);
-  }
-
   .overlay {
     width: calc(100% - 50px);
 }
