@@ -39,6 +39,11 @@ span {
   color: var(--txt-grey);
 }
 
+span:hover {
+  color: white;
+  cursor: pointer;
+}
+
 /* GENERIC RULES */
 
 /* UTILITIES */
@@ -303,6 +308,14 @@ padding: 10px;
 font-size: 1.5rem;
 }
 
+.add-playlist:hover i {
+  background-color: white;
+}
+
+.add-playlist:hover span {
+  color: white;
+}
+
 .name-playlist {
   overflow-y: auto;
 }
@@ -313,6 +326,11 @@ font-size: 1.5rem;
 
 .name-playlist li a {
   color: var(--txt-grey);
+}
+
+.name-playlist li:hover a {
+  color: white;
+  cursor: pointer;
 }
 
 /* TIRDTH COL */
@@ -385,6 +403,7 @@ aside .row .col:last-child {
 .media-player-panel-control .album-cover img {
   width: 50px;
   margin-right: 10px; 
+  cursor: pointer;
 }
 
 .media-player-panel-control .info-song {
@@ -393,6 +412,7 @@ aside .row .col:last-child {
 
 .media-player-panel-control .info-song h4 {
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .media-player-panel-control .info-song span {
@@ -404,6 +424,9 @@ aside .row .col:last-child {
   color: var(--txt-grey);
   font-size: 1.3rem;
   gap: 10px;
+}
+.media-player-panel-control .add-icons i:hover {
+  color: white;
 }
 
       /* LEFT COL */
