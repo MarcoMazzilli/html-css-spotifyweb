@@ -14,28 +14,29 @@
 </head>
 
 <body>
-  
-
 
   <main class="d-flex">
 
-    <aside>
-
+    <aside>   <!-- START ASIDE -->
       <div class="row">
 
-        <div class="col d-flex">
-          <!-- logo -->
-          <img src="img/logo.svg" alt="Logo Spotify" title="Logo Spotify" class="logo-desktop">
-          <img src="img/logo-small.svg" alt="Logo Spotify" class="logo-mobile">
-          <!-- logo -->
-          <ul>
+        <div class="col action d-flex"> <!-- section action -->
+          
+          <picture> <!-- logo -->
+            <img src="img/logo.svg" alt="Logo Spotify" title="Logo Spotify" class="logo-desktop">
+            <img src="img/logo-small.svg" alt="Logo Spotify" class="logo-mobile">
+          </picture>
+
+
+          <ul> <!-- cta -->
             <li><span class="active "></span><a href="#"><img src="img/home.svg" alt=""></a><span>Home</span></li>
             <li><span class=""></span><a href="#"><img src="img/search.svg" alt=""></a><span>Cerca</span></li>
             <li><span class=""></span><a href="#"><img src="img/libreria.svg" alt=""></a><span>La tua libreria</span></li>
           </ul>
+
         </div>
 
-        <div class="col d-flex">
+        <div class="col playlist d-flex"> <!-- section playlist -->
 
           <h3>PLAYLIST</h3>
 
@@ -44,7 +45,7 @@
             <span>Crea Playlist</span>
           </div>
 
-          <div class="name-playlist">
+          <div class="name-playlist"> <!--playlist name -->
             <nav>
               <ul>
                 <li><a href="#">Nome playlist</a></li>
@@ -67,7 +68,7 @@
 
         </div>
 
-        <div class="col d-flex">
+        <div class="col user d-flex"> <!-- section user -->
           <div class="wrapper-desktop">
             <div class="download-cta d-flex">
               <img src="img/download.svg" alt="Download icon">
@@ -84,9 +85,9 @@
         </div>
 
       </div>
-    </aside>
+    </aside>  <!-- FINISH ASIDE -->
 
-    <div class="main-container">
+    <div class="main-container">  <!-- START ALBUM'S CONTAINER -->
 
         <div class="overlay">
           <a href="#" class="btn">Effettua l'upgrade</a>
@@ -107,8 +108,9 @@
         
         <div class="container-music">
 
-          <section class="recently-played">
+          <section class="recently-played"> <!--Recently played-->
             <h1>Recently played</h1>
+
             <div class="container-card">
               <div class="row d-flex d-wrap">
 
@@ -177,7 +179,7 @@
             </div>
           </section>
 
-          <section class="created-for-you">
+          <section class="created-for-you"> <!--Created for you-->
             <h1>Created for you</h1>
             <span>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</span>
             <div class="container-card">
@@ -200,11 +202,12 @@
                     <h3>Daily Mix 1</h3>
                   </div>
                 </div>
+
               </div>
             </div>
           </section>
 
-          <section class="suggested-artist">
+          <section class="suggested-artist"> <!--Suggested artist-->
             <h1>Artisti pi&ugrave; popolari</h1>
             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, eaque?</span>
             <div class="container-card">
@@ -226,20 +229,22 @@
                     <h3>Ludovico Einaudi</h3>
                   </div>
                 </div>
+
               </div>
             </div>
           </section>
 
         </div>
 
-    </div>
+    </div> <!-- END ALBUM'S CONTAINER -->
 
   </main>
 
-  <div class="media-player-panel-control">
-    <div class="row d-flex">
+  <div class="media-player-panel-control"> <!-- START CONTROL PANEL -->
 
-      <div class="col info d-flex">
+    <div class="row d-flex">
+      
+      <div class="col info d-flex"> <!-- START TRACK-INFO -->
         
         <div class="album-cover">
           <img src="img/aquietplace.jpeg" alt="">
@@ -254,10 +259,9 @@
           <i class="fa-regular fa-heart"></i>
           <i class="fa-regular fa-folder"></i>
         </div>
-      
       </div>
 
-      <div class="col control">
+      <div class="col control"> <!-- START TRACK-CONTROL -->
         <div class="container-control">
 
           <div class="track-control d-flex ">
@@ -283,23 +287,21 @@
         </div>
       </div>
 
-      <div class="col volume d-flex">
+      <div class="col volume d-flex"> <!-- START VOLUME-CONTROL -->
         <div class="icons d-flex">
           <span><i class="fa-solid fa-list-ul"></i></span>
           <span><i class="fa-solid fa-display"></i></span>
           <span><i class="fa-solid fa-volume-high"></i></span>
-      </div>
-      <div class="volume">
-        <div class="bar volume">
-        <div class="bar-progression volume"></div>
+        </div>
 
+        <div class="volume">
+          <div class="bar volume">
+            <div class="bar-progression volume"></div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-
     </div>
-  </div>
-
+  </div> <!-- END CONTROL PANEL -->
 
 </body>
 </html>

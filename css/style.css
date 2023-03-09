@@ -98,6 +98,7 @@ span:hover {
 /* ******************
       PROGRESSION BAR
 *********************** */
+
 .bar-progression {
   width: 30%;
   border-radius: 20px;
@@ -122,7 +123,6 @@ span:hover {
 }
 
 /* UTILITIES */
-
 
 /***************************************** 
           MAIN SECTION
@@ -200,6 +200,7 @@ main {
 .container-card {
 margin: 30px 0;
 }
+
 /***************************************** 
         CARD STYLE
 ******************************************/
@@ -260,6 +261,7 @@ margin: 30px 0;
 /***************************************** 
         START ASIDE STYLE
 ******************************************/
+
 aside {
   width: 230px;
   flex-shrink: 0;
@@ -279,8 +281,6 @@ aside .row .col:not(:first-child) {
   padding: 10px;
 }
 
-/* GENERIC RULES */
-
 /* FIRST COL */
 
 aside .row .col:first-child {
@@ -290,7 +290,7 @@ aside .row .col:first-child {
   flex-direction: column;
   justify-content: space-between;
 }
-   /* LOGO STYLE */
+/* START LOGO STYLE */
 
 aside .row .col:first-child .logo-desktop {
   width: 70%;
@@ -298,11 +298,11 @@ aside .row .col:first-child .logo-desktop {
 }
 
 aside .row .col:first-child .logo-mobile{
-width: 30px;
-display: none;
+  width: 30px;
+  display: none;
 }
 
-   /* LOGO STYLE */
+/* END LOGO STYLE */
 
 aside .row .col:first-child li {
   display: flex;
@@ -319,10 +319,10 @@ aside .row .col:first-child li:first-child span {
 }
 
 aside .row .col:first-child li span:first-child {
-width: 5px;
-height: 30px;
-margin-right: 5px;
-border-radius: 0px 5px 5px 0px;
+  width: 5px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 /* SECOND COL */
@@ -338,10 +338,10 @@ aside .row .col:nth-child(2) {
 }
 
 .add-playlist i {
-background-color: var(--txt-grey);
-color: black;
-padding: 10px;
-font-size: 1.5rem;
+  background-color: var(--txt-grey);
+  color: black;
+  padding: 10px;
+  font-size: 1.5rem;
 }
 
 .add-playlist:hover i {
@@ -434,7 +434,7 @@ aside .row .col:last-child {
   flex-shrink: 0;
 } 
 
-      /* GENERIC RULES */
+/* GENERIC RULES */
 
 .media-player-panel-control .album-cover img {
   width: 50px;
@@ -465,7 +465,7 @@ aside .row .col:last-child {
   color: white;
 }
 
-      /* LEFT COL */
+/* FIRST COL */
 
 .container-control {
   width: 60%;
@@ -502,14 +502,14 @@ aside .row .col:last-child {
   flex-shrink: 0;
 }
 
-    /* SECOND COL */
+/* SECOND COL */
 
 .media-player-panel-control .col:last-child{
   justify-content: space-around;
 }
 
 .volume {
-width: 60%;
+  width: 60%;
 }
 
 .volume .icons {
@@ -526,4 +526,4 @@ width: 60%;
   color: white;
   padding: 2px;
 }
-      /* TIRDTH COL */
+/* THIRD COL */
