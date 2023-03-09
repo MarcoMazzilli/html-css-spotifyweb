@@ -34,19 +34,40 @@
   }
   
   .overlay {
-    width: calc(100% - 50px);
-}
+    width: calc(100% - 50px); 
+  }
 
   .container-music .description h3 {
     font-size: 1rem;
   }
 
-  .media-player-panel-control .info-song {
-    margin-right: 0px;
-  }
   .navbar ul li {
     margin-bottom: 10px;
     padding: 0 10px;
+  }
+
+  .media-player-panel-control .col:last-child {
+    justify-content: space-evenly;
+  }
+
+    .media-player-panel-control .col:last-child .icons{
+    flex-direction: column;
+  }
+
+  .add-icons {
+    flex-direction: column;
+  }
+
+  .media-player-panel-control .info-song {
+    margin-right: 5px;
+  }
+
+  .track-control {
+    gap: 20px;
+  }
+
+  .progression-info span {
+    font-size: .8rem;
   }
 
 }

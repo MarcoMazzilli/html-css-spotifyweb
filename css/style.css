@@ -376,18 +376,19 @@ aside .row .col:last-child {
   width: 250px;
   height: 6vh;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
+  flex-shrink: 0;
 } 
 
       /* GENERIC RULES */
 
-.media-player-panel-control .info-song {
-  margin-right: 20px;
-}
-
 .media-player-panel-control .album-cover img {
   width: 50px;
-  margin-right: 10px;
+  margin-right: 10px; 
+}
+
+.media-player-panel-control .info-song {
+  margin-right: 20px;
 }
 
 .media-player-panel-control .info-song h4 {
@@ -418,7 +419,7 @@ aside .row .col:last-child {
   height: 5vh;
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 40px;
 }
 
 .track-control span {
