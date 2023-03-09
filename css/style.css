@@ -110,6 +110,7 @@ main {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -124,6 +125,12 @@ main {
   margin-top: 110px;
 }
 
+.navbar li > div {
+  height: 2px;
+  width: 20px;
+  margin: 5px auto;
+}
+
 .navbar ul {
   height: 50px;
   justify-content: center;
@@ -132,7 +139,7 @@ main {
 }
 
 .navbar ul li:hover a {
-  text-decoration: underline;
+  color: white;
 }
 
 .navbar ul li {
@@ -141,6 +148,7 @@ main {
 }
 
 .navbar a {
+  color: var(--txt-grey);
   text-transform: uppercase;
 }
 
@@ -205,6 +213,7 @@ margin: 30px 0;
   transform: rotatex(180deg);
   font-size: 5rem;
   transition-duration: .6s;
+  text-shadow: 3px -5px 5px rgba(0, 0, 0, 0.8);
 }
 
 /***************************************** 
@@ -393,6 +402,7 @@ aside .row .col:last-child {
 .media-player-panel-control .add-icons {
   color: var(--txt-grey);
   font-size: 1.3rem;
+  gap: 10px;
 }
 
       /* LEFT COL */
@@ -408,7 +418,7 @@ aside .row .col:last-child {
   height: 5vh;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 10%;
 }
 
 .track-control span {
@@ -440,6 +450,10 @@ aside .row .col:last-child {
 
 .volume {
 width: 60%;
+}
+
+.volume .icons {
+  gap: 3px;
 }
 
 .bar {

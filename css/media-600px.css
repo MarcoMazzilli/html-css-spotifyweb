@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   
   aside {
     width: 50px;
@@ -20,8 +20,6 @@
     display: block; 
     margin: 10px auto;
   }
-
-
 
   aside ul:first-of-type span:last-child {
     display: none;

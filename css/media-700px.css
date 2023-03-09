@@ -4,13 +4,17 @@
     width: calc(100% / 2);
     padding: 0 5px ;
   }
-
-  .track-control span:first-child {
-    display: none;
-  }
   
-  .track-control span:last-child {
-    display: none;
+  .volume .icons {
+    flex-direction: column;
   }
 
+  .media-player-panel-control .col:last-child{
+    justify-content: center;
+  }
+
+  .add-icons {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
