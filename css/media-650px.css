@@ -1,7 +1,27 @@
 @media screen and (max-width: 650px) {
+
+.wrapper-mobile {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrapper-mobile img {
+  margin-bottom: 20px;
+}
+
+.wrapper-desktop {
+  display: none ;
+}
+
   
   aside {
     width: 50px;
+  }
+
+  aside .row {
+    justify-content: space-between;
+    height: 100%;
   }
 
   .aside .row .col:first-child {
@@ -29,9 +49,19 @@
     display: none;
   }
   
-  aside .col:nth-child(3){
-    display: none;
+  aside .row .col:last-child {
+
   }
+  
+  aside .col:last-child img {
+    width: 25px;
+}
+
+  aside .col:last-child img:last-child {
+    background-color: var(--txt-grey);
+    padding: 5px;
+    border-radius: 50%;
+  } 
   
   .overlay {
     width: calc(100% - 50px); 
