@@ -91,6 +91,32 @@ span:hover {
   margin: 5px 0;
 }
 
+/* ******************
+      PROGRESSION BAR
+*********************** */
+.bar-progression {
+  width: 30%;
+  border-radius: 20px;
+  border: 3px solid white;
+  position: relative;
+}
+
+.bar-progression::before {
+  content: "";
+  padding: 8px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: -10px;
+  top: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.bar-progression:hover {
+  border-radius: 20px;
+  border: 3px solid var(--spotify-green);
+}
+
 /* UTILITIES */
 
 
@@ -490,18 +516,6 @@ width: 60%;
   width: 100%;
   border-radius: 20px;
   background-color: grey;
-}
-
-.bar-progression {
-  width: 30%;
-  border-radius: 20px;
-  border: 3px solid white
-}
-
-.bar-progression:hover {
-  width: 30%;
-  border-radius: 20px;
-  border: 3px solid var(--spotify-green);
 }
 
 .media-player-panel-control .col:last-child .icons i {
