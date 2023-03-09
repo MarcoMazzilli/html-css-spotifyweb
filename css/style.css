@@ -238,7 +238,7 @@ aside .row .col:first-child li:first-child span {
 /* SECOND COL */
 
 aside .row .col:nth-child(2) {
-  height: calc( 90vh - (200px + 75px));
+  height: calc( 90vh - (200px + 100px));
   flex-direction: column;
 }
 
@@ -269,13 +269,17 @@ font-size: 1.5rem;
 /* TIRDTH COL */
 
 aside .row .col:last-child {
-  height: 75px;
+  height: 100px;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
+}
+
+.download-cta {
+  align-items: center;
 }
 
 .download-cta img {
-  width: 20px;
+  width: 25px;
   margin-right: 10px;
   filter: invert(51%) sepia(3%) saturate(485%) hue-rotate(185deg) brightness(96%) contrast(86%)
 }
@@ -285,17 +289,18 @@ aside .row .col:last-child {
   font-weight: bold;
 }
 
-.author {
+.profile {
   align-items: center;
   gap: 10px;
 }
 
-.author img {
+.profile img {
   width: 25px;
+  padding: 2px;
   background-color: var(--txt-grey);
   border-radius: 50%;
 }
-.author h3 {
+.profile h3 {
   font-size: 1rem;
 }
 
