@@ -121,9 +121,15 @@ main {
 
 .overlay a {
   position: absolute;
-  right: 20px;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.overlay a:hover {
+  position: absolute;
+  top: 25%;
+  transform: scale(1.2);
 }
 
 .navbar {
