@@ -33,14 +33,14 @@ aside .row .col:first-child {
   justify-content: flex-start;
 }
 
-aside .row .col:first-child .logo-desktop {
+/* aside .row .col:first-child .logo-desktop {
   display: none;
 }
 
 aside .row .col:first-child .logo-mobile {
   display: block; 
   margin: 10px auto;
-}
+} */
 
 aside ul:first-of-type span:last-child {
   display: none;

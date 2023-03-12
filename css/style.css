@@ -299,14 +299,9 @@ aside .row .col:first-child {
 }
 /* START LOGO STYLE */
 
-aside .row .col:first-child .logo-desktop {
-  width: 70%;
+aside .row .col:first-child picture{
+  width: 80%;
   margin: 10px 5px;
-}
-
-aside .row .col:first-child .logo-mobile{
-  width: 30px;
-  display: none;
 }
 
 /* END LOGO STYLE */
