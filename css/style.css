@@ -99,6 +99,12 @@ span:hover {
       PROGRESSION BAR
 *********************** */
 
+.bar {
+  width: 100%;
+  border-radius: 20px;
+  background-color: grey;
+}
+
 .bar-progression {
   width: 30%;
   border-radius: 20px;
@@ -106,7 +112,7 @@ span:hover {
   position: relative;
 }
 
-.bar-progression::before {
+.bar-progression:hover:after {
   content: "";
   padding: 8px;
   background-color: rgb(255, 255, 255);
@@ -115,6 +121,7 @@ span:hover {
   top: 0;
   transform: translateY(-50%);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .bar-progression:hover {
@@ -516,11 +523,7 @@ aside .row .col:last-child {
   gap: 3px;
 }
 
-.bar {
-  width: 100%;
-  border-radius: 20px;
-  background-color: grey;
-}
+
 
 .media-player-panel-control .col:last-child .icons i {
   color: white;
